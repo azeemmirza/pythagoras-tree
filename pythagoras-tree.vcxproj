@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pythagoras-tree.cpp" />
+    <ClCompile Include="src\pythagoras-tree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82B782C4-AFA3-4065-9705-FCD87C259D47}</ProjectGuid>
