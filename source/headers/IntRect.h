@@ -45,21 +45,27 @@ IntRect::IntRect() {
 
 IntRect::IntRect(int left, int right, int bottom, int top)
 {
-	l = left; r = right; b = bottom; t = top;
+	this->l = left; 
+	this->r = right; 
+	this->b = bottom; 
+	this->t = top;
 }
 
 void IntRect::set(int left, int right, int bottom, int top)
 {
-	l = left; r = right; b = bottom; t = top;
+	this->l = left; 
+	this->r = right; 
+	this->b = bottom; 
+	this->t = top;
 }
 
-int IntRect::getl() { return l; }
+int IntRect::getl() { return this->l; }
 
-int IntRect::getr() { return r; }
+int IntRect::getr() { return this->r; }
 
-int IntRect::getb() { return b; }
+int IntRect::getb() { return this->b; }
 
-int IntRect::gett() { return t; }
+int IntRect::gett() { return this->t; }
 
 void IntRect::draw(void)
 {
