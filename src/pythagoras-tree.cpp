@@ -3,9 +3,7 @@
 
 
 std::string copyrights() {
-	//char cp = (wchar_t) 184;
-	std::string s = "Pythagoras Tree (c) 2018 \n\n";
-	//s.insert(0,1, cp);
+	std::string s = "\n Pythagoras Tree (c) 2018 \n Azeem Mirza - azeemirza.com \n License: MIT (c) 2017 - 2018";
 	return s;
 
 }

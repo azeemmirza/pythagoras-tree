@@ -27,4 +27,9 @@
       <Filter>Git</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="copyrights.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

@@ -24,6 +24,9 @@
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="copyrights.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82B782C4-AFA3-4065-9705-FCD87C259D47}</ProjectGuid>
     <RootNamespace>pythagorastree</RootNamespace>
