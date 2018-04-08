@@ -43,3 +43,46 @@ private:
 	RealRect window; 
 
 };
+
+/**
+* @constructor
+*/
+Canvas::Canvas(int width, int height, char* windowTitle)// constructor
+{
+	/**
+	* Dummy argument list for glutInit()
+	*/
+	char* argv[1]; 
+	char dummyString[8];
+
+	/**
+	* Hook up the pointer
+	*/
+	argv[0] = dummyString; // 
+
+	/**
+	* To satisfy glutInit()
+	*/
+	int argc = 1; 
+
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	glutInitWindowSize(width, height);
+	glutInitWindowPosition(1000, 20);
+	/**
+	* Open the screen window
+	*/
+	glutCreateWindow(windowTitle); 
+	/**
+	* Default world window
+	*/
+	setWindow(0, (float)width, 0, (float)height); //
+	/**
+	* Default viewport
+	*/
+	setViewport(0, width, 0, height); 
+	/**
+	* Initialize the CP to (0,0)
+	*/
+	CP.set(0.0f, 0.0f, 0.0f);
+}
