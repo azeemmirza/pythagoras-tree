@@ -1,4 +1,5 @@
 #pragma once
+#include "CONFIG.h"
 #include "Point.h"
 #include "Turn.h"
 
@@ -13,7 +14,10 @@ public:
 
 
 	State() {
-		
+		this->CP.set(0, 0, 0);
+		this->CD = 0;
+		this->size = SIZE;
+		this->turn = UP;
 	}
 	State(float size) {
 		
