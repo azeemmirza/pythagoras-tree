@@ -6,6 +6,7 @@
 * @date 08/04/18
 */
 #pragma once
+#include "CONFIG.h"
 #include "Point.h"
 #include "IntRect.h"
 #include "RealRect.h"
@@ -64,11 +65,11 @@ Canvas::Canvas(int width, int height, char* windowTitle)// constructor
 	* To satisfy glutInit()
 	*/
 	int argc = 1; 
-
+	int windowPositionX = WIN_POS_X; int windowPositionY = WIN_POS_Y;
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(width, height);
-	glutInitWindowPosition(1000, 20);
+	glutInitWindowPosition(windowPositionX, windowPositionY);
 	/**
 	* Open the screen window
 	*/
