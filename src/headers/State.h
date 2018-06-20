@@ -4,7 +4,10 @@
 #include "Turn.h"
 
 #ifndef STATE_H
-
+/**
+* @class State
+* @description state selection class in which state current axiom is or going to be
+*/
 class State {
 public:
 	Point3 CP;

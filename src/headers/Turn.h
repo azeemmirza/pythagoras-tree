@@ -9,7 +9,7 @@
 #ifndef TURN_H
 
 /**
-* @class Turn
+* @enum Turn
 * @description Enum class for TURN selection
 */
 

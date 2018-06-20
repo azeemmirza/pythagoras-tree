@@ -27,9 +27,13 @@
   <ItemGroup>
     <ClInclude Include="copyrights.h" />
     <ClInclude Include="src\headers\Canvas.h" />
+    <ClInclude Include="src\headers\CONFIG.h" />
     <ClInclude Include="src\headers\IntRect.h" />
     <ClInclude Include="src\headers\Point.h" />
     <ClInclude Include="src\headers\RealRect.h" />
+    <ClInclude Include="src\headers\Square.h" />
+    <ClInclude Include="src\headers\State.h" />
+    <ClInclude Include="src\headers\Turn.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82B782C4-AFA3-4065-9705-FCD87C259D47}</ProjectGuid>
