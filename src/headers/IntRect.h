@@ -8,6 +8,12 @@
 
 #pragma once
 #include "Point.h"
+
+/**
+* @class IntRect
+* @description Rectangular frame class in Integer Numbers
+*/
+
 class IntRect
 {
 public:

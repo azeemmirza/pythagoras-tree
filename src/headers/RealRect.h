@@ -8,6 +8,11 @@
 #pragma once
 #include "Point.h"
 
+/**
+* @class RealRect
+* @description Rectangular frame class in Real Numbers 
+*/
+
 class RealRect
 {
 public:
