@@ -157,3 +157,11 @@ void LinderEngine::drawForward() {
 	this->cState.CP.
 		setY(tmp.getY() + additiveY);
 }
+
+void LinderEngine::turnRight () {
+
+	this->cState.CD += beta;
+	this->cState.turn = RIGHT;
+	this->cState.size *= sin(degreeToRad(alpha));
+	
+}
