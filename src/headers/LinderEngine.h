@@ -90,3 +90,21 @@ float degreeToRad(float d) {
 	return r;
 }
 
+
+void LinderEngine::moveForward() {
+	
+	Point3 
+		tmp = this->cState.CP;
+
+	float 
+		angle = -(this->cState.CD),
+		r = (t2 / 2) + (t3 / 2),
+		additiveX = (sin(degreeToRad(angle))*(r)),
+		additiveY = (cos(degreeToRad(angle))*(r));
+
+	this->cState.CP.
+		setX(tmp.getX() + additiveX);
+	this->cState.CP.
+		setY(tmp.getY() + additiveY);
+
+}
