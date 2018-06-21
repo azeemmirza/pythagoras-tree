@@ -47,7 +47,7 @@ private:
 	void startBranch();
 	void endBranch();
 
-	float deg2Rad ();
+	float deg2Rad (float d);
 	float calX ();
 	float calY ();
 
@@ -85,7 +85,7 @@ LinderEngine* LinderEngine::getInstance (std::string str, float size, float angl
 
 }
 
-float degreeToRad(float d) {
+float LinderEngine::deg2Rad (float d) {
 	float r = (d * M_PI) / 180;
 	return r;
 }
@@ -99,8 +99,8 @@ void LinderEngine::moveForward() {
 	float 
 		angle = -(this->cState.CD),
 		r = (t2 / 2) + (t3 / 2),
-		additiveX = (sin(degreeToRad(angle))*(r)),
-		additiveY = (cos(degreeToRad(angle))*(r));
+		additiveX = (sin(deg2Rad(angle))*(r)),
+		additiveY = (cos(deg2Rad(angle))*(r));
 
 	this->cState.CP.
 		setX(tmp.getX() + additiveX);
@@ -149,8 +149,8 @@ void LinderEngine::drawForward() {
 	angle = -angle;
 
 	float 
-		additiveX = sin(degreeToRad(angle))*(s / 2),
-		additiveY = cos(degreeToRad(angle))*(s / 2);
+		additiveX = sin(deg2Rad(angle))*(s / 2),
+		additiveY = cos(deg2Rad(angle))*(s / 2);
 
 	this->cState.CP.
 		setX(tmp.getX() + additiveX);
@@ -162,6 +162,9 @@ void LinderEngine::turnRight () {
 
 	this->cState.CD += beta;
 	this->cState.turn = RIGHT;
-	this->cState.size *= sin(degreeToRad(alpha));
+	this->cState.size *= sin(deg2Rad(alpha));
 	
 }
+
+
+
