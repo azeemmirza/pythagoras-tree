@@ -174,3 +174,21 @@ void LinderEngine::turnLeft() {
 
 }
 
+void LinderEngine::startBranch() {
+	
+	this->t1 = this->cState.size;
+	this->t2 = t1*cos(deg2Rad(alpha));
+	this->t3 = t1*sin(deg2Rad(alpha));
+	this->branchCount += 1;
+	Memory.push_back(cState);
+
+}
+
+void LinderEngine::endBranch() {
+
+	this->cState = Memory.back();
+	this->branchCount -= 1;
+	Memory.pop_back();
+
+}
+
