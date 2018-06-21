@@ -166,5 +166,11 @@ void LinderEngine::turnRight () {
 	
 }
 
+void LinderEngine::turnLeft() {
 
+	this->cState.CD += alpha;
+	this->cState.turn = LEFT;
+	this->cState.size *= cos(deg2Rad(alpha));
+
+}
 
