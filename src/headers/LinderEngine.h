@@ -13,6 +13,7 @@
 #include "Square.h"
 #include "State.h"
 #include "Turn.h"
+#include "CONFIG.h"
 
 /**
 * @class LinderEngine
@@ -84,35 +85,8 @@ LinderEngine* LinderEngine::getInstance (std::string str, float size, float angl
 
 }
 
-void LinderEngine::moveForward() {
-	Point3 tmp = this->cState.CP;
-	//tmp.setSize(10.0);
-	//tmp.draw();
-	/*
-	printf("x: %f , y: %f \n", tmp.getX(), tmp.getY());
-	float size = this->cState.size;
-	float angle = -(this->cState.CD);
-	printf("move: %f", angle);
-	float turn = this->cState.turn;
-
-
-	float additiveX = (sin(degreeToRad(angle))*(size));
-
-	float additiveY = (cos(degreeToRad(angle))*(size));
-
-	this->cState.CP.setX(tmp.getX() + additiveX);
-	this->cState.CP.setY(tmp.getY() + additiveY);*/
-	//float turn = this->cState.turn;
-	float r, angle;
-	angle = -(this->cState.CD);
-	r = (t2 / 2) + (t3 / 2);
-
-
-	float additiveX = (sin(degreeToRad(angle))*(r));
-
-	float additiveY = (cos(degreeToRad(angle))*(r));
-
-	this->cState.CP.setX(tmp.getX() + additiveX);
-	this->cState.CP.setY(tmp.getY() + additiveY);
-
+float degreeToRad(float d) {
+	float r = (d * M_PI) / 180;
+	return r;
 }
+
