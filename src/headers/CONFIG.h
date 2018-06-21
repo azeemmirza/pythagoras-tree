@@ -8,3 +8,5 @@
 
 #define WIN_SIZE_WIDTH 1000;
 #define WIN_SIZE_HEIGHT 1000;
+
+#define M_PI       3.14159265358979323846
