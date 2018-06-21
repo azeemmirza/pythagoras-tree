@@ -108,3 +108,52 @@ void LinderEngine::moveForward() {
 		setY(tmp.getY() + additiveY);
 
 }
+
+void LinderEngine::drawForward() {
+	
+	Point3 
+		tmp = this->cState.CP;
+	
+	float 
+		s = this->cState.size,
+		angle = this->cState.CD;
+
+	glColorMaterial(GL_FRONT, GL_3D);
+	glEnable(GL_COLOR_MATERIAL);
+	
+	//printf("draw: %f",angle);
+	
+	if (this->branchCount < 5) {
+
+		glColor3f(0.39, 0.72, 0.52);
+		//glColor3f(0.54509,0.2705,0.7450);
+	
+	}
+	
+	else {
+	
+		glColor3f(0, 0.501960784, 0);
+
+	}
+
+	glPushMatrix();
+	glTranslatef(tmp.getX(), tmp.getY(), tmp.getZ());
+	glRotatef(angle, 0, 0, 1);
+	glTranslatef(-tmp.getX(), -tmp.getY(), -tmp.getZ());
+	
+	Square 
+		sqrq(tmp, s);
+	
+	glPopMatrix();
+	
+	angle = -angle;
+
+	float 
+		additiveX = sin(degreeToRad(angle))*(s / 2),
+		additiveY = cos(degreeToRad(angle))*(s / 2);
+
+	this->cState.CP.
+		setX(tmp.getX() + additiveX);
+	this->cState.CP.
+		setY(tmp.getY() + additiveY);
+}
