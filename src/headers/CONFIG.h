@@ -1,6 +1,7 @@
 #define SIZE	10;
 #define DIRECTION	UP;
 
+#define WIN_TITLE "Pythagoras Tree"
 
 
 #define WIN_POS_X	100; 
