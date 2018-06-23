@@ -17,7 +17,7 @@
 * @description Creates Canvas for drawing
 */
 class Canvas {
-	Canvas(int width, int height, char* windowTitle);
+	Canvas(int argc, char** argv, int width, int height, char* windowTitle);
 
 	void setWindow(float l, float r, float b, float t);
 	void setViewport(int l, int r, int b, int t);
@@ -48,23 +48,9 @@ private:
 /**
 * @constructor
 */
-Canvas::Canvas(int width, int height, char* windowTitle)// constructor
+Canvas::Canvas(int argc = 1, char** argv = {}, int width, int height, char* windowTitle)// constructor
 {
-	/**
-	* Dummy argument list for glutInit()
-	*/
-	char* argv[1]; 
-	char dummyString[8];
 
-	/**
-	* Hook up the pointer
-	*/
-	argv[0] = dummyString; // 
-
-	/**
-	* To satisfy glutInit()
-	*/
-	int argc = 1; 
 	int windowPositionX = WIN_POS_X; int windowPositionY = WIN_POS_Y;
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
