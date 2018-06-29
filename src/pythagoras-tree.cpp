@@ -49,44 +49,7 @@ void surface() {
 
 
 void display() {
-	/*
-	glColor3f(1, 1, 0);
-	Point3 pp(0,0,0);
-	pp.setSize(10.0);
-	pp.draw();
 
-	glPushMatrix();
-	glRotatef(45, 0,0,1);
-	Square sq(pp, 10);
-	glTranslatef(-10, 0, 0);
-	glPopMatrix();
-
-
-	glColor3f(1, 1, 1);
-	Point3 ppe(10, 10, 0);
-	ppe.setSize(10.0);
-	ppe.draw();
-	float angal = 30;
-	float size = 10;
-	float aa = calculateX(ppe,angal), bb = calculateY(ppe,angal);
-	//printf("x: %f y: %f", aa,bb);
-
-
-	glPushMatrix();
-	glTranslatef(ppe.getX(), ppe.getY(), ppe.getZ());
-	glRotatef(angal, 0, 0, 1);
-	glTranslatef(-ppe.getX(), -ppe.getY(), -ppe.getZ());
-	Square sqq(ppe, size);
-	glPopMatrix();
-
-	ppe.set(30,0,0);
-	glPushMatrix();
-	glTranslatef(ppe.getX(), ppe.getY(), ppe.getZ());
-	glRotatef(angal, 0, 0, 1);
-	glTranslatef(-ppe.getX(), -ppe.getY(), -ppe.getZ());
-	Square sqrq(ppe, size);
-	glPopMatrix();
-	*/
 	glPushMatrix();
 	glTranslatef(0, -20, -100);
 	pyth();

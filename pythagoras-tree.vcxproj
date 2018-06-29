@@ -25,12 +25,14 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="copyrights.h" />
+    <ClInclude Include="src\copyrights.h" />
     <ClInclude Include="src\headers\Canvas.h" />
     <ClInclude Include="src\headers\CONFIG.h" />
     <ClInclude Include="src\headers\IntRect.h" />
+    <ClInclude Include="src\headers\LinderEngine.h" />
     <ClInclude Include="src\headers\Point.h" />
     <ClInclude Include="src\headers\RealRect.h" />
+    <ClInclude Include="src\headers\Rewriter.h" />
     <ClInclude Include="src\headers\Square.h" />
     <ClInclude Include="src\headers\State.h" />
     <ClInclude Include="src\headers\Turn.h" />
