@@ -3,6 +3,8 @@
 #include "copyrights.h"
 #include "headers/Canvas.h";
 #include "headers/CONFIG.h";
+#include "headers/LinderEngine.h";
+#include "headers/Rewriter.h"
 
 #include <map>
 
@@ -19,18 +21,20 @@ void pyth() {
 	std::pair <char, std::string> R1('S', "X [ - M S ] [ + M S ]");
 	ruleSet.insert(R1);
 
-	RuleEngine r(axiom, ruleSet, iterations);
+	
+	// RuleEngine r(axiom, ruleSet, iterations);
+	// std::string s = r.getResult();
 
-	std::string s = r.getResult();
+	std::string s = rewriter(axiom, ruleSet, iterations);
 	std::cout << s << std::endl;
 	glColor3f(1, 1, 0);
 
-	LSystem l(s, 20, aaa);
+	LinderEngine* e = LinderEngine::getInstance(s, 20, aaa);
 	Point3 pp(0, 0, 0);
 	pp.setSize(10.0); pp.draw();
 	surface();
 	glColor3f(0, 1, 1);
-	l.engine();
+	e->run();
 
 }
 
