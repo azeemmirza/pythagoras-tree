@@ -192,3 +192,48 @@ void LinderEngine::endBranch() {
 
 }
 
+void LinderEngine::run() {
+	printf("a1: %f \ta2: %f \n ", alpha, beta);
+	printf("r1: %f \tr2: %f \n\n", ratio, ratio2);
+	std::string strr = this->str;
+	int lngth = strr.length();
+	for (int i = 0; i < lngth; i++) {
+		char c = strr[i];
+		switch (c) {
+		case 'S':
+		case 'X':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->drawForward();
+			printf("\t"); this->cState.printState();
+			break;
+		case 'M':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->moveForward();
+			printf("\t"); this->cState.printState();
+			break;
+		case '+':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->turnRight();
+			printf("\t"); this->cState.printState();
+			break;
+		case '-':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->turnLeft();
+			printf("\t"); this->cState.printState();
+			break;
+		case '[':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->startBranch();
+			printf("\t"); this->cState.printState();
+			break;
+		case ']':
+			printf("\n %d :\t", i); this->cState.printState();
+			this->endBranch();
+			printf("\t"); this->cState.printState();
+			break;
+		case ' ':
+			printf("\n %d :s\t", i);  this->cState.printState();
+			break;
+		}
+	}
+}
