@@ -7,7 +7,7 @@
   */
 
 #pragma once
-#include "../GLUT/glut.h"
+#include "../../glut.h"
 
 /**
   * @class Point3
