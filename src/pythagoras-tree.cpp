@@ -137,7 +137,7 @@ int main (int argc, char argv) {
 	std::cout << copyrights() << std::endl;
 	//getchar();
 
-	//initLighting();
+	initLighting();
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
 	//glutKeyboardFunc(key);
