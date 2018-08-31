@@ -17,6 +17,7 @@
 * @description Creates Canvas for drawing
 */
 class Canvas {
+public:
 	Canvas(int width, int height, char* windowTitle);
 
 	void setWindow(float l, float r, float b, float t);
