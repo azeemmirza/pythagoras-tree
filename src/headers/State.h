@@ -31,6 +31,12 @@ State::State() {
 	this->turn = DIRECTION;
 }
 
+State::State(float size) {
+	this->CP = CP;
+	this->CD = CD;
+	this->size = size;
+	this->turn = DIRECTION;
+}
 
 #endif // !STATE_H
 
