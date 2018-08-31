@@ -13,7 +13,7 @@ std::string replacer(std::string atom, int p, std::string a) {
 std::string rewriter(std::string atom, std::map<char, std::string> m, int itr) {
 	std::map<char, std::string >::iterator iter;
 	iter = m.begin();
-	int atomPos = 0;
+	unsigned int atomPos = 0;
 	for (int i = 0; i < itr; ) {
 		
 		for (atomPos = 0; atomPos < atom.length();) {
