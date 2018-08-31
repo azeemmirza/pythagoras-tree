@@ -4,6 +4,8 @@
 #include "headers/Canvas.h";
 #include "headers/CONFIG.h";
 
+#include <map>
+
 float aaa = 60;
 void surface();
 
@@ -116,13 +118,13 @@ void reshape(int w, int h) {
   * @function main
   * @params Argument Count [argc], Argument Vector [argv]
   */
-int main (int argc, char** argv) {
+int main (int argc, char argv) {
 
 	int cvsWinWidth = WIN_SIZE_WIDTH;
 	int cvsWinHeight = WIN_SIZE_HEIGHT;
 	std::string cvsWinTitle = WIN_TITLE;
 
-	Canvas cvs(argc, argv, 1000, 1000, "Pythgoras Tree");
+	Canvas cvs(1000, 1000, "Pythgoras Tree");
 
 	std::cout << copyrights() << std::endl;
 	//getchar();
