@@ -24,5 +24,13 @@ public:
 
 };
 
+State::State() {
+	this->CP.set(0, 0, 0);
+	this->CD = 0;
+	this->size = SIZE;
+	this->turn = DIRECTION;
+}
+
+
 #endif // !STATE_H
 
