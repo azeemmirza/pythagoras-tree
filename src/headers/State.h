@@ -42,5 +42,10 @@ State::State(Point3 CP, float CD, float size) {
 	this->size = size;
 }
 
+void State::printState() {
+	Point3 tmp = this->CP;
+	printf(" Position: ( %f , %f , %f ) Size: %f Angle: %f\n", tmp.getX(), tmp.getY(), tmp.getZ(), this->size, this->CD);
+}
+
 #endif // !STATE_H
 
