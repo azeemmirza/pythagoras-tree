@@ -42,12 +42,6 @@ IntRect::IntRect() {
 	this->t = 100;
 }
 
-IntRect::IntRect() {
-	this->l = 0; 
-	this->r = 100;
-	this->b = 0;
-	this->t = 100;
-}
 
 IntRect::IntRect(int left, int right, int bottom, int top)
 {
