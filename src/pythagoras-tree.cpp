@@ -1,9 +1,12 @@
 #include <string>
 #include <iostream>
+
+#include "headers/CONFIG.h"
+
 #include "copyrights.h"
-#include "headers/Canvas.h";
-#include "headers/CONFIG.h";
-#include "headers/LinderEngine.h";
+#include "headers/Canvas.h"
+
+#include "headers/LinderEngine.h"
 #include "headers/Rewriter.h"
 
 #include <map>
@@ -72,7 +75,7 @@ void initLighting()
 	GLfloat qaAmbientLight[] = { 0, 0, 0, 1.0 };
 	GLfloat qaDiffuseLight[] = { 0.8, 0.8, 0.8, 1.0 };
 	GLfloat qaSpecularLight[] = { 1.0, 1.0, 1.0, 1.0 };
-	GLfloat emitLight[] = { 1, 0.9, 0.9, 0.01 };
+	GLdouble emitLight[] = { 1, 0.9, 0.9, 0.01 };
 	GLfloat Noemit[] = { 0.0, 0.0, 0.0, 1.0 };
 	GLfloat qaLightPosition[] = { 0, 0, -50, 1 };
 	// Enable lighting
