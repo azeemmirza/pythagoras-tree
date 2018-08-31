@@ -16,19 +16,13 @@
 class RealRect
 {
 public:
-	RealRect() { l = 0; r = 100; b = 0; t = 100; }
-	RealRect(float left, float right, float bottom, float top)
-	{
-		l = left; r = right; b = bottom; t = top;
-	} // constructors
-	void set(float left, float right, float bottom, float top)
-	{
-		l = left; r = right; b = bottom; t = top;
-	}
-	float getl() { return l; }
-	float getr() { return r; }
-	float getb() { return b; }
-	float gett() { return t; }
+	RealRect();
+	RealRect(float left, float right, float bottom, float top);
+	void set(float left, float right, float bottom, float top);
+	float getl();
+	float getr();
+	float getb();
+	float gett();
 	void draw(void);
 private:
 	float l, r, b, t;
