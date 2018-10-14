@@ -18,7 +18,7 @@
 */
 class Canvas {
 public:
-	Canvas(int width, int height, char* windowTitle);
+	Canvas(int width, int height, std::string windowTitle);
 
 	void setWindow(float l, float r, float b, float t);
 	void setViewport(int l, int r, int b, int t);
@@ -49,7 +49,7 @@ private:
 /**
 * @constructor
 */
-Canvas::Canvas(int width, int height, char* windowTitle)// constructor
+Canvas::Canvas(int width, int height, std::string windowTitle)// constructor
 {
 
 	char* argv[1]; // dmmy argument list for glutInit()
@@ -65,7 +65,8 @@ Canvas::Canvas(int width, int height, char* windowTitle)// constructor
 	/**
 	* Open the screen window
 	*/
-	glutCreateWindow(windowTitle); 
+	const char* windowTitleChar = windowTitle.c_str;
+	glutCreateWindow(windowTitleChar); 
 	/**
 	* Default world window
 	*/
