@@ -26,7 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\config.hpp" />
-    <ClInclude Include="src\copyrights.h" />
+    <ClInclude Include="src\copyrights.hpp" />
     <ClInclude Include="src\headers\Canvas.hpp" />
     <ClInclude Include="src\headers\CONFIG.hpp" />
     <ClInclude Include="src\headers\IntRect.hpp" />
