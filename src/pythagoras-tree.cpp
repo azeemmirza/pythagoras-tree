@@ -3,7 +3,7 @@
 #include <map>
 
 #include "config.hpp"
-#include "copyrights.h"
+#include "copyrights.hpp"
 
 #include "headers/Canvas.hpp"
 #include "headers/LinderEngine.hpp"
