@@ -25,18 +25,18 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\config.hpp" />
     <ClInclude Include="src\copyrights.h" />
-    <ClInclude Include="src\headers\Canvas.h" />
-    <ClInclude Include="src\headers\CONFIG.h" />
-    <ClInclude Include="src\headers\IntRect.h" />
-    <ClInclude Include="src\headers\LinderEngine.h" />
-    <ClInclude Include="src\headers\Point.h" />
-    <ClInclude Include="src\headers\RealRect.h" />
-    <ClInclude Include="src\headers\Rewriter.h" />
-    <ClInclude Include="src\headers\Square.h" />
-    <ClInclude Include="src\headers\State.h" />
-    <ClInclude Include="src\headers\Turn.h" />
+    <ClInclude Include="src\headers\Canvas.hpp" />
+    <ClInclude Include="src\headers\CONFIG.hpp" />
+    <ClInclude Include="src\headers\IntRect.hpp" />
+    <ClInclude Include="src\headers\LinderEngine.hpp" />
+    <ClInclude Include="src\headers\Point.hpp" />
+    <ClInclude Include="src\headers\RealRect.hpp" />
+    <ClInclude Include="src\headers\Rewriter.hpp" />
+    <ClInclude Include="src\headers\Square.hpp" />
+    <ClInclude Include="src\headers\State.hpp" />
+    <ClInclude Include="src\headers\Turn.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82B782C4-AFA3-4065-9705-FCD87C259D47}</ProjectGuid>

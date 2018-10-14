@@ -1,7 +1,7 @@
 #pragma once
-#include "CONFIG.h"
-#include "Point.h"
-#include "Turn.h"
+#include "CONFIG.hpp"
+#include "Point.hpp"
+#include "Turn.hpp"
 
 #ifndef STATE_H
 /**

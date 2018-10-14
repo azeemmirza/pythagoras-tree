@@ -10,10 +10,11 @@
 #include <vector>
 #include <string>
 #include <math.h>
-#include "Square.h"
-#include "State.h"
-#include "Turn.h"
-#include "CONFIG.h"
+
+#include "Square.hpp"
+#include "State.hpp"
+#include "Turn.hpp"
+#include "CONFIG.hpp"
 
 /**
 * @class LinderEngine

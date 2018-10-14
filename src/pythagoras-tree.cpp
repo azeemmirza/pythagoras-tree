@@ -1,15 +1,17 @@
 #include <string>
 #include <iostream>
+#include <map>
 
 #include "config.hpp"
-
 #include "copyrights.h"
-#include "headers/Canvas.h"
 
-#include "headers/LinderEngine.h"
-#include "headers/Rewriter.h"
+#include "headers/Canvas.hpp"
+#include "headers/LinderEngine.hpp"
+#include "headers/Rewriter.hpp"
 
-#include <map>
+
+
+
 
 
 

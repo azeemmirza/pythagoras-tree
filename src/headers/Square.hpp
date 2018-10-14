@@ -6,7 +6,7 @@
 * @date 20/06/18
 */
 #pragma once
-#include "Point.h"
+#include "Point.hpp"
 
 #ifndef SQUARE_H
 

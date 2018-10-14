@@ -6,10 +6,10 @@
 * @date 08/04/18
 */
 #pragma once
-#include "CONFIG.h"
-#include "Point.h"
-#include "IntRect.h"
-#include "RealRect.h"
+#include "CONFIG.hpp"
+#include "Point.hpp"
+#include "IntRect.hpp"
+#include "RealRect.hpp"
 
 
 /**

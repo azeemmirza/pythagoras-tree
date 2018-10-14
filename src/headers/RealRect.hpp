@@ -6,7 +6,7 @@
 * @date 23/11/17
 */
 #pragma once
-#include "Point.h"
+#include "Point.hpp"
 
 /**
 * @class RealRect
