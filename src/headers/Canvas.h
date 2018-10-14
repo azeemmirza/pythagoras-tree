@@ -64,7 +64,7 @@ Canvas::Canvas(int width, int height, int positionX, int positionY, std::string 
 	/**
 	* Open the screen window
 	*/
-	const char* windowTitleChar = windowTitle.c_str;
+	const char* windowTitleChar = windowTitle.c_str();
 	glutCreateWindow(windowTitleChar); 
 	/**
 	* Default world window
