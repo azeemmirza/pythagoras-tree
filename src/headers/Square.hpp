@@ -85,6 +85,4 @@ Square::Square(Point3 i, float s) {
 
 	glEnd();
 }
-
-
 #endif //SQUARE_H
