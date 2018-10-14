@@ -61,7 +61,7 @@
     <ClInclude Include="src\copyrights.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
+    <ClInclude Include="src\config.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -25,7 +25,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h" />
+    <ClInclude Include="src\config.h" />
     <ClInclude Include="src\copyrights.h" />
     <ClInclude Include="src\headers\Canvas.h" />
     <ClInclude Include="src\headers\CONFIG.h" />

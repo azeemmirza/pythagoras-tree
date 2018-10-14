@@ -6,7 +6,7 @@
 #define WIN_POS_Y	100;
 
 #define WIN_SIZE_WIDTH		1000;
-#define WIN_SIZE_HEIGHT		900;
+#define WIN_SIZE_HEIGHT		1000;
 
 
 //RULE_SET_VARIABLE -> RULE_SET_DEFINITION 
@@ -15,7 +15,7 @@
 
 // TREE CONFIGS
 #define AXIOM "S";
-#define SIZE	30;
+#define SIZE	20;
 #define DIRECTION	UP;
 #define ANGLE 60.0;
 #define ITERATIONS 10;
