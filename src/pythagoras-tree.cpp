@@ -133,9 +133,12 @@ int main (int argc, char argv) {
 
 	int cvsWinWidth = WIN_SIZE_WIDTH;
 	int cvsWinHeight = WIN_SIZE_HEIGHT;
+	int cvsWinPosX = WIN_POS_X;
+	int cvsWinPosY = WIN_POS_Y;
+
 	std::string cvsWinTitle = WIN_TITLE;
 
-	Canvas cvs(cvsWinWidth, cvsWinHeight, cvsWinTitle);
+	Canvas cvs(cvsWinWidth, cvsWinHeight, cvsWinPosX, cvsWinPosY, cvsWinTitle);
 
 	std::cout << copyrights() << std::endl;
 	//getchar();
