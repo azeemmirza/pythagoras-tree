@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 
-#include "headers/CONFIG.h"
+#include "config.h"
 
 #include "copyrights.h"
 #include "headers/Canvas.h"
@@ -13,8 +13,21 @@
 
 
 
+// Consts from CONFIG file
+int cvsWinWidth = WIN_SIZE_WIDTH;
+int cvsWinHeight = WIN_SIZE_HEIGHT;
+int cvsWinPosX = WIN_POS_X;
+int cvsWinPosY = WIN_POS_Y;
+std::string cvsWinTitle = WIN_TITLE;
 
-float aaa = 60;
+char ruleSetVariable = RULE_SET_VARIABLE;
+std::string ruleSetDefinition = RULE_SET_DEFINITION;
+
+std::string axiom = AXIOM;
+float angle = ANGLE;
+int iterations = ITERATIONS;
+float size = SIZE;
+
 void surface();
 
 
@@ -22,10 +35,9 @@ void surface();
 
 
 void pyth() {
-	std::string axiom = "S";
-	int iterations = 10;
+	
 	std::map <char, std::string> ruleSet;
-	std::pair <char, std::string> R1('S', "X [ - M S ] [ + M S ]");
+	std::pair <char, std::string> R1(ruleSetVariable, ruleSetDefinition);
 	ruleSet.insert(R1);
 
 	
@@ -36,7 +48,7 @@ void pyth() {
 	std::cout << s << std::endl;
 	glColor3f(1, 1, 0);
 
-	LinderEngine* e = LinderEngine::getInstance(s, 20, aaa);
+	LinderEngine* e = LinderEngine::getInstance(s, size, angle);
 	Point3 pp(0, 0, 0);
 	pp.setSize(10.0); pp.draw();
 	surface();
@@ -98,10 +110,10 @@ void initLighting()
 
 void key(unsigned char c, int x, int y) {
 	if (c == 'a') {
-		aaa += 1;
+		angle += 1;
 	}
 	else if (c == 's') {
-		aaa += 1;
+		angle += 1;
 
 	}
 }
@@ -130,13 +142,6 @@ void reshape(int w, int h) {
   * @params Argument Count [argc], Argument Vector [argv]
   */
 int main (int argc, char argv) {
-
-	int cvsWinWidth = WIN_SIZE_WIDTH;
-	int cvsWinHeight = WIN_SIZE_HEIGHT;
-	int cvsWinPosX = WIN_POS_X;
-	int cvsWinPosY = WIN_POS_Y;
-
-	std::string cvsWinTitle = WIN_TITLE;
 
 	Canvas cvs(cvsWinWidth, cvsWinHeight, cvsWinPosX, cvsWinPosY, cvsWinTitle);
 
