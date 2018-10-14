@@ -10,11 +10,6 @@
 #include "headers/Rewriter.hpp"
 
 
-
-
-
-
-
 // Consts from CONFIG file
 int cvsWinWidth = WIN_SIZE_WIDTH;
 int cvsWinHeight = WIN_SIZE_HEIGHT;
@@ -33,18 +28,11 @@ float size = SIZE;
 void surface();
 
 
-
-
-
 void pyth() {
 	
 	std::map <char, std::string> ruleSet;
 	std::pair <char, std::string> R1(ruleSetVariable, ruleSetDefinition);
 	ruleSet.insert(R1);
-
-	
-	// RuleEngine r(axiom, ruleSet, iterations);
-	// std::string s = r.getResult();
 
 	std::string s = rewriter(axiom, ruleSet, iterations);
 	std::cout << s << std::endl;
@@ -126,13 +114,8 @@ void reshape(int w, int h) {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 
-	//glOrtho(-200, 200, -200, 200, -200, 200);
-	//glOrtho(-30, 30, -30, 30, -30, 30);
-
-
-
 	gluPerspective(90.0, (GLdouble)w / (GLdouble)h, 0, 200.0);
-	//gluLookAt(0, 0, 0, 0, 0, -1, 0, 1, 0);
+	
 	glMatrixMode(GL_MODELVIEW);
 	glViewport(0, 0, w, h);
 }
