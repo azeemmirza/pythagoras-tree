@@ -19,5 +19,4 @@ enum Turn {
 	UP,
 	DOWN
 };
-
 #endif // !TURN_H
