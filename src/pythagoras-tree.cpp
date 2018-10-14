@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 
-#include "config.h"
+#include "config.hpp"
 
 #include "copyrights.h"
 #include "headers/Canvas.h"
