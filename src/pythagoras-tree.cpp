@@ -11,6 +11,9 @@
 
 #include <map>
 
+
+
+
 float aaa = 60;
 void surface();
 
@@ -132,7 +135,7 @@ int main (int argc, char argv) {
 	int cvsWinHeight = WIN_SIZE_HEIGHT;
 	std::string cvsWinTitle = WIN_TITLE;
 
-	Canvas cvs(1000, 1000, "Pythgoras Tree");
+	Canvas cvs(cvsWinWidth, cvsWinHeight, cvsWinTitle);
 
 	std::cout << copyrights() << std::endl;
 	//getchar();
