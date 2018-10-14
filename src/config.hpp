@@ -19,9 +19,3 @@
 #define DIRECTION	UP;
 #define ANGLE 60.0;
 #define ITERATIONS 10;
-
-
-
-
-
-
